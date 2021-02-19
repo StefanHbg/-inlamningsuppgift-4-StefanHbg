@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title" : "Lasse-Stefanz",
+        "date" : "21 Mars",
+        "location" : "Slotthöjdaren",
+        "time" : "19.00 - 21.00",
+        "price" : "350 sek"
+    },
+    {
+        "id": 2,
+        "title" : "Pelle Trubadur",
+        "date" : "05 Januari",
+        "location" : "Arena Sthlm",
+        "time" : "21.00 - 00.00",
+        "price" : "290 sek"
+    },
+    {
+        "id": 3,
+        "title" : "Kajsas Lovenest",
+        "date" : "15 Juli",
+        "location" : "Gärdet Norr",
+        "time" : "00.00 - 03.00",
+        "price" : "100 sek"
+    },
+    {
+        "id": 4,
+        "title" : "Klubb Santapolen",
+        "date" : "24 December",
+        "location" : "Nordpolen S",
+        "time" : "15.00 - 20.00",
+        "price" : "499 sek"
+    }
+]

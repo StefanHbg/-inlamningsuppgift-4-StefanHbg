@@ -1,38 +1,219 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+
+#root{
+  background-color: #E5E5E5;
+}
+
+/* CSS för events component */
+
+.events-div-header, .order-div-header, .receipt-div-header{
+  height: 100vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 25px;
+  font-family: 'Sansita', sans-serif;
+  background-color: #231F42;
+  margin-left: 400px;
+}
+
+.events-h1, .receipt-paragraph{
+  color: #F56B9A;
+  font-size: 35px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.events-h1{
+  padding-bottom: 60px;
+  margin: 0;
+  font-size: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.events-date{
+  display: flex;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.events-date-child{
+  width: 70px;
+  height: 56px;
+  padding-top: 10px;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 30px;
+  text-align: center;
+}
+
+.hr-styling{
+  margin: 0;
+  border: none;
+}
+
+.events-paragraph{
+  text-transform: uppercase;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.event-desc{
+  color: white;
+  text-shadow: 1px 1px 0px #F56B9A;
+}
+
+.event-desc-location, .event-desc-time{
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
+  margin-top: -20px;
+  margin-right: 170px;
+  text-shadow: none;
+}
+
+.event-desc-time{
+  font-weight: 600;
+}
+
+.event-desc-div{
+  display: flex;
+  border-bottom: 1px solid grey;
+  margin-top: 27px;
+}
+
+.event-desc-price{
+  color: #37AEAB;
+  margin-top: -23px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* CSS för order component */
+
+.order-heading-title{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.order-title{
+  color: #F56B9A;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Sansita', sans-serif;
+}
+
+.order-date{
+  color: #37AEAB;
+  font-weight: 600;
+  text-align: center;
+  margin-top: -30px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.order-location{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.order-price{
+  color: white;
+  text-shadow: 1px 1px 0px #F56B9A;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.order-button{
+  padding: 20px;
+  margin: 72px 60px 0 60px;
+  background-color: #37AEAB;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* CSS för Receipt component */
+
+.receipt-paragraph{
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.table-container{
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.thead-tr, .tbody-tr{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tbody-tr{
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.table-small-heading{
+  font-family: 'Fira Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 15px;
+  padding: 10px;
+  width: 33.33%;
+}
+
+.table-small-heading-2{
+  border-left: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.tbody-tr-td{
+  padding: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  height: 90px;
+}
+
+.thead-td{
+  padding-left: 10px;
+  padding-bottom: 25px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #F56B9A;
+}
+
+.thead-td{
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.tfoot-container{
+  background-color: rgba(0, 0, 0, 0.06);
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.tfoot-tr-container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 25px;
+}
+
+.tfoot-2-td{
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Fira Sans', sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  width: 33.33%;
+  border-left: 1px dashed rgba(0, 0, 0, 0.4);
 }
